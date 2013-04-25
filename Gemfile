@@ -12,6 +12,8 @@ gem 'pg'
 # Auth gems
 gem 'devise'
 gem 'cancan'
+gem 'omniauth'
+gem 'omniauth-github'
 
 # Server/transport gems
 gem 'thin'

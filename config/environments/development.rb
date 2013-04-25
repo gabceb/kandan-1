@@ -39,5 +39,9 @@ Kandan::Application.configure do
   config.logger.level = Logger.const_get(
     ENV['LOG_LEVEL'] ? ENV['LOG_LEVEL'].upcase : 'DEBUG'
   )
+
+  # Variable set to be able to get faye client for test environments
+  ENV['GITHUB_KEY'] = Kandan::Config.options[:github_key] unless ENV['GITHUB_KEY']
+  ENV['GITHUB_SECRET'] = Kandan::Config.options[:github_secret] unless ENV['GITHUB_SECRET']
   
 end

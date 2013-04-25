@@ -19,3 +19,6 @@
 
 :now_threshold: 3000
 :timestamp_refresh_interval: 2000
+
+:github_key: "ENTER_GITHUB_APP_KEY"
+:github_secret: "ENTER_GITHUB_SECRET_KEY"
